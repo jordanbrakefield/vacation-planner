@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_secondary_variant"
+    tools:context=".UI.ReportList">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:background="#008cd4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Pick a date to see if there are any vacations planned to start on that day!"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Start Date: "></TextView>
+
+                <EditText
+                    android:id="@+id/startdatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint = "start date"
+                    android:inputType="none"
+                    android:focusable="false"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/reporttimestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint = ""
+                    android:inputType="none"
+                    android:focusable="false"></EditText>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <!--    Task B7, A recycler view,  a design element that makes the app scalable-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reportrecyclerview"
+        android:layout_width="409dp"
+        android:layout_height="473dp"
+        tools:layout_editor_absoluteX = "1dp"
+        tools:layout_editor_absoluteY = "201dp"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
