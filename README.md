@@ -1,4 +1,6 @@
-<h1> Design Doc: </h1>
+<h1> Wireframe: </h1>
+
+![wireframe](https://github.com/jordanbrakefield/vacation-planner/assets/54958144/07e0aa70-caab-4bf2-a94e-628ae1978a9b)
 
 
 
@@ -7,9 +9,7 @@
 
 
 
-
-
-<h1>How to operate Vacation Planner: </h1>
+<h1>How to operate the Vacation Planner application: </h1>
 
 When you open the application, you will be greeted by the home screen.
 
